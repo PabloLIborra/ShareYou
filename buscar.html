@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+	<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<title>Buscar Entrada - ShareYou</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" type="text/css" href="general.css">
+		<link rel="stylesheet" type="text/css" href="buscar.css">
+		<link rel="stylesheet" type="text/css" href="fontello-54deeba2/css/animation.css">
+		<link rel="stylesheet" type="text/css" href="fontello-54deeba2/css/fontello.css">
+		<link rel="stylesheet" type="text/css" href="fontello-54deeba2/css/fontello-codecs.css">
+		<link rel="stylesheet" type="text/css" href="fontello-54deeba2/css/fontello-embedded.css">
+		<script src="function.js"></script>
+	</head>
+	<body onload="clearLogin();firefoxDate();">
+		<input type="checkbox" class="checkbox" id="check"/>
+		<label for="check" class="check"></label>
+		<nav class="nav">
+			<h2 class="nav_item">ShareYou!</h2>
+			<a href="index.html" class="nav_item current"><span class="icon-home"></span>Inicio</a>
+			<a href="buscar.html" class="nav_item"><span class="icon-search"></span>Buscar</a>
+			<a href="login.html" class="nav_item"><span class="icon-login"></span>Login</a>
+			<a href="registro.html" class="nav_item"><span class="icon-user-add"></span>Registro</a>
+			<a href="index.html" class="nav_item" onclick="salir();"><span class="icon-logout"></span>Logout</a>
+			<a href="nueva-entrada.html" class="nav_item"><span class="icon-edit"></span>Nueva Entrada</a>
+		</nav> 
+		<header > 
+		<div id="image">
+			<img class="featured-img" src="mobile-first-index.png" alt="" />
+		</div>
+		<h1>ShareYou!</h1>
+		<h2 id="txt_exp">Publica las experiencias que quieras compartir</h2>
+		</header>
+
+		<section>
+		<h3>Formulario de Búsqueda</h3>
+			<form onsubmit="buscar(this,event);" id="formB" action="buscar.html" method="post">
+				<p>
+					<input type="text" placeholder="Título de la Entrada" name="titulo">
+				</p>
+				<p>
+					<input type="text" placeholder="Descripción" name="description">
+				</p>
+				<p>
+					<input type="text" placeholder="Autor" name="autor" >
+				</p>
+				<p>
+					<label><b>Desde: </b></label> <br>
+					<input type="date" name="desde" id="iniF">
+					<br><label id="lIFN">Dia: </label> <br>
+					<input type="number" name="desde" id="FiniFN" min="1" max="31">
+					<br><label id="lIFM">Mes: </label> <br>
+					<input type="number" name="desde" id="FiniFM" min="1" max="12">
+					<br><label id="lIFY">Año: </label> <br>
+					<input type="number" name="desde" id="FiniFY" min="2016" max="2017">
+				</p>
+				<p>
+					<label><b>Hasta: </b></label> <br>
+					<input type="date" name="hasta" id="finalF">
+					<br><label id="lFFN">Dia: </label> <br>
+					<input type="number" name="desde" id="FfinalFN" min="1" max="31">
+					<br><label id="lFFM">Mes: </label> <br>
+					<input type="number" name="desde" id="FfinalFM" min="1" max="12">
+					<br><label id="lFFY">Año: </label> <br>
+					<input type="number" name="desde" id="FfinalFY" min="2016" max="2017">
+				</p>
+				<input id="eB" type="submit" value="Buscar" >
+			</form>
+			<h3>Resultados de Búsqueda</h3>
+			<div>
+				<template>
+					<article class="entrada">
+						<p><a href="entrada.html"></a></p>
+						<figure>
+							<img src="prueba.PNG" alt="foto">
+							<figcaption></figcaption>
+							<a href="entrada.html">Ver más</a>
+						</figure>
+						<p><b>Autor:</b></p>
+						<p><b>Fecha de publicación:</b></p>
+						<p><b>Número de fotos:</b></p>
+						<p><b>Número de comentarios:</b></p>
+					</article>
+				</template>
+			</div>
+			<p>
+			<button onclick="iniPagB();"><span class="icon-angle-double-left"></span></button>
+			<button onclick="downPagB();"><span class="icon-angle-left"></span></button>
+			<span id="pagina">1</span>
+			<button onclick="upPagB(event);"><span class="icon-angle-right"></span></button>
+			<button onclick="finalPagB();"><span class="icon-angle-double-right"></span></button>
+			</p>
+		</section>
+
+		<footer>
+			<a href="acerca.html">Contacto</a>
+			<p> ShareYou <time datetime="2017">2017</time>&#169;</p>
+		</footer>
+	</body>
+</html>

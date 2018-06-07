@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+	<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<title>Inicio - ShareYou</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" type="text/css" href="general.css">
+		<link rel="stylesheet" type="text/css" href="entrada.css">
+		<link rel="stylesheet" type="text/css" href="fontello-54deeba2/css/animation.css">
+		<link rel="stylesheet" type="text/css" href="fontello-54deeba2/css/fontello.css">
+		<link rel="stylesheet" type="text/css" href="fontello-54deeba2/css/fontello-codecs.css">
+		<link rel="stylesheet" type="text/css" href="fontello-54deeba2/css/fontello-embedded.css">
+		<script src="function.js"></script>
+	</head>
+	<body onload = "clearLogin(); Entrada();">
+		<input type="checkbox" class="checkbox" id="check"/>
+		<label for="check" class="check"></label>
+		<nav class="nav">
+			<h2 class="nav_item">ShareYou!</h2>
+			<a href="index.html" class="nav_item current"><span class="icon-home"></span>Inicio</a>
+			<a href="buscar.html" class="nav_item"><span class="icon-search"></span>Buscar</a>
+			<a href="login.html" class="nav_item"><span class="icon-login"></span>Login</a>
+			<a href="registro.html" class="nav_item"><span class="icon-user-add"></span>Registro</a>
+			<a href="index.html" class="nav_item" onclick="salir();"><span class="icon-logout"></span>Logout</a>
+			<a href="nueva-entrada.html" class="nav_item"><span class="icon-edit"></span>Nueva Entrada</a>
+		</nav> 
+		<header > 
+		<div id="image">
+			<img class="featured-img" src="mobile-first-index.png" alt="" />
+		</div>
+		<h1>ShareYou!</h1>
+		<h2 id="txt_exp">Publica las experiencias que quieras compartir</h2>
+		</header>
+
+		<section>
+		<h3>Título</h3>
+			<article class="entrada">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa id dignissimos explicabo autem illum maiores cum impedit magni minima, quae.</p>
+				<p><b>Autor:</b> Jose</p>
+				<p><b>Fecha de publicación:</b> 20-02-2017</p>
+				<p><a id="eFotos" href="entrada.html#fotos"><b>Número de fotos:</b> 1</a></p>
+				<p><a id="eCom" href="entrada.html#comentario"><b>Número de comentarios:</b> 1</a></p>
+			</article>
+			<h3 id="fotos">Fotografías</h3>
+			<div >
+			<template>
+						<div>
+							<p>1</p>
+							<img src="prueba.PNG" alt="">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, nemo.</p>
+						</div>	
+			</template>
+			</div>
+			<h3 id ="comentario">Comentarios</h3>
+
+			<div>
+				<p><a id="resp1" href="login.html">Debes estar logueado para comentar</a></p>
+
+			</div>
+
+			<div>
+			<template>
+				<article class="comentario">
+					<p>Jose - </p>
+					<p>Martes, 14/02/2017, 9:32h</p>
+					<p>Lorem ipsum dolor.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam explicabo quae dicta quisquam necessitatibus voluptatem?</p>	
+					<button id="butResp" onclick="responderCom(this);"> Responder </button>					
+				</article>
+				
+				</template>
+			</div>
+		</section>
+
+		<footer>
+			<a href="acerca.html">Contacto</a>
+			<p> ShareYou <time datetime="2017">2017</time>&#169;</p>
+		</footer>
+	</body>
+</html>

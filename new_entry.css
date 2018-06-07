@@ -1,0 +1,200 @@
+body{
+	text-align: center;
+}
+
+body>section>h3{
+	margin-left:-10px;
+	margin-bottom: 0px;
+	font-family: 'Lobster', cursive;
+	font-size: 1.7em;
+	text-decoration: underline;
+}
+
+form{
+	margin-bottom:20px;
+}
+
+form>p>input{
+	background-color: transparent;
+	border:none;
+	border-bottom: 2px solid black;
+	width:55%;
+	height:30px;
+	font-size: 1.2em;
+}
+
+.tempFoto>p>textarea{
+	background-color: transparent;
+	border:none;
+	border-bottom: 2px solid black;
+	width:70%;
+	margin-left: 20px;
+	font-size: 1em;
+}
+
+form>p>textarea{
+	background-color: transparent;
+	border:none;
+	border-bottom: 2px solid black;
+	width:70%;
+	margin-left: 20px;
+	font-size: 1em;
+}
+
+.tempFoto>p>textarea:hover{
+	border-bottom: 4px solid black;
+}
+
+.tempFoto>p>textarea:focus{
+	border-bottom: 4px solid #7986CB;
+}
+
+.tempFoto>p>input:hover{
+	border-bottom: 4px solid black;
+}
+
+.tempFoto>p>input:focus{
+	border-bottom: 4px solid #7986CB;
+}
+
+form>p>textarea:hover{
+	border-bottom: 4px solid black;
+}
+
+form>p>textarea:focus{
+	border-bottom: 4px solid #7986CB;
+}
+
+form>p>input:hover{
+	border-bottom: 4px solid black;
+}
+
+form>p>input:focus{
+	border-bottom: 4px solid #7986CB;
+}
+
+.tempFoto>p>button{
+	border: 1px solid black;
+	padding: 4px;
+	border-radius: 5px;
+	color:white;
+	font-size:0.8em !important;
+	background-color: #f44336;
+}
+
+.tempFoto>p>button:hover{
+	border: 1px solid black;
+	padding: 4px;
+	border-radius: 5px;
+	color:black;
+	font-size:0.8em !important;
+	background-color: #f44336;
+}
+
+.tempFoto>p:nth-of-type(3)>button{
+	border: 1px solid black;
+	padding: 4px;
+	border-radius: 5px;
+	background-color: #4CAF50;
+	color:white;
+	font-size:0.8em !important;
+}
+
+.tempFoto>p:nth-of-type(3)>button:hover{
+	border: 1px solid black;
+	padding: 4px;
+	border-radius: 5px;
+	background-color: #4CAF50;
+	color:black;
+	font-size:0.8em !important;
+}
+
+form>p>button{
+	border: 1px solid black;
+	padding: 4px;
+	border-radius: 5px;
+	color:white;
+	font-size:0.8em !important;
+	background-color: #f44336;
+}
+
+form>p>button:hover{
+	border: 1px solid black;
+	padding: 4px;
+	border-radius: 5px;
+	color:black;
+	font-size:0.8em !important;
+	background-color: #f44336;
+}
+
+form>p:nth-of-type(3)>button{
+	border: 1px solid black;
+	padding: 4px;
+	border-radius: 5px;
+	background-color: #4CAF50;
+	color:white;
+	font-size:0.8em !important;
+}
+
+form>p:nth-of-type(3)>button:hover{
+	border: 1px solid black;
+	padding: 4px;
+	border-radius: 5px;
+	background-color: #4CAF50;
+	color:black;
+	font-size:0.8em !important;
+}
+
+form>input[type=submit]{
+	border: 1px solid black;
+	padding: 4px;
+	border-radius: 5px;
+	background-color: #7986CB;
+	color:black;
+	font-size:0.8em !important;
+
+
+}
+
+form>input[type=submit]:hover{
+	border: 1px solid black;
+	padding: 4px;
+	border-radius: 5px;
+	/*#4CAF50;#f44336;*/
+	background-color: #7986CB;
+	color:white;
+	font-size:0.8em !important;
+
+
+}
+
+form>label{
+	text-decoration: none !important;
+}
+
+.tempFoto>p>img{
+	height:150px;
+	width:150px;
+	border-radius:5px;
+}
+.tempFoto>p{
+	text-decoration: underline;
+}
+
+@media only screen and (min-width: 480px) and (max-width: 710px){
+	
+}
+
+@media only screen and (min-width: 710px) and (max-width: 1050px){
+	.tempFoto{
+		display: inline-block;
+		width: 45%;
+	}
+}
+
+@media only screen and (min-width: 1050px){
+	.tempFoto{
+		display: inline-block;
+		width: 33%;
+	}
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+	<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<title>Inicio - ShareYou</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" type="text/css" href="general.css">
+		<link rel="stylesheet" type="text/css" href="new_entry.css">
+		<link rel="stylesheet" type="text/css" href="fontello-54deeba2/css/animation.css">
+		<link rel="stylesheet" type="text/css" href="fontello-54deeba2/css/fontello.css">
+		<link rel="stylesheet" type="text/css" href="fontello-54deeba2/css/fontello-codecs.css">
+		<link rel="stylesheet" type="text/css" href="fontello-54deeba2/css/fontello-embedded.css">
+		<script src="function.js"></script>
+	</head>
+	<body onload = "clearLogin(); cargaIndexEntrada();">
+		<input type="checkbox" class="checkbox" id="check"/>
+		<label for="check" class="check"></label>
+		<nav class="nav">
+			<h2 class="nav_item">ShareYou!</h2>
+			<a href="index.html" class="nav_item current"><span class="icon-home"></span>Inicio</a>
+			<a href="buscar.html" class="nav_item"><span class="icon-search"></span>Buscar</a>
+			<a href="login.html" class="nav_item"><span class="icon-login"></span>Login</a>
+			<a href="registro.html" class="nav_item"><span class="icon-user-add"></span>Registro</a>
+			<a href="index.html" class="nav_item" onclick="salir();"><span class="icon-logout"></span>Logout</a>
+			<a href="nueva-entrada.html" class="nav_item"><span class="icon-edit"></span>Nueva Entrada</a>
+		</nav> 
+		<header > 
+		<div id="image">
+			<img class="featured-img" src="mobile-first-index.png" alt="" />
+		</div>
+		<h1>ShareYou!</h1>
+		<h2 id="txt_exp">Publica las experiencias que quieras compartir</h2>
+		</header>
+
+		<section>
+			<h3>Nueva Entrada</h3>
+			<form onsubmit="subirEntrada(event, this);" action="entrada.html" method="post">
+					<p>
+						<input type="text" name="title" placeholder="Título" maxlength="200" required>
+					</p>
+					<label >Comentario</label>
+					<p>
+						<textarea  name="coment"   rows="5" cols="20" required>
+						</textarea>
+					</p>
+					<p>
+						<button onclick="anyadirFoto();">Añadir Foto</button>
+					</p>
+					<p>
+						No se pueden subir imagenes con un tamaño mayor a 500kB. En caso de superarse, se advertira con un marco rojo en la imagen
+					</p>
+					<div>
+						<template>
+							<div class="tempFoto">
+								<p>Foto</p>
+								<input type="file" name="file" onchange="actualizarFoto(this);" required>
+								<p><img onclick="secFoto(this);" src="mobile-first-index.png" alt="foto"></p>
+								<p><textarea  cols="30" rows="5" required></textarea></p>
+								<p><button onclick="borrarFoto(this);">Borrar Foto</button></p>
+							</div>
+						</template>
+					</div>
+
+					<br>
+					<input type="submit"  value="Crear Entrada" >
+
+					
+					
+			</form>	
+		</section>
+
+		<footer>
+			<a href="acerca.html">Contacto</a>
+			<p> ShareYou <time datetime="2017">2017</time>&#169;</p>
+		</footer>
+	</body>
+</html>

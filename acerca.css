@@ -1,0 +1,36 @@
+body{
+	text-align: center;
+}
+body>section>div{
+	width: 80vw;
+	margin:auto;
+}
+
+body>section>div>h3{
+	margin-left:-10px;
+	margin-bottom: 0px;
+	font-family: 'Lobster', cursive;
+	font-size: 1.7em;
+	text-decoration: underline;
+}
+body>section>div>p:nth-of-type(3){
+	font-size: 1.1em;
+	text-decoration: underline;
+}
+
+body>section>div>pre{
+	font-size: 1.1em;
+	text-align: center;
+}
+
+@media only screen and (min-width: 480px) and (max-width: 710px){
+
+}
+
+@media only screen and (min-width: 710px) and (max-width: 1050px){
+
+}
+
+@media only screen and (min-width: 1050px){
+	
+}

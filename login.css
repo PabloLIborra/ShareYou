@@ -1,0 +1,78 @@
+body{
+	text-align: center;
+}
+
+body>section>form{
+	margin-bottom:50px;
+	margin-top:30px;
+}
+
+body>section>form>p>input{
+	background-color: transparent;
+	border:none;
+	border-bottom: 2px solid black;
+	width:50%;
+	height:30px;
+	font-size: 1.2em;
+}
+
+body>section>form>p>span{
+	display:none;
+	color: red;
+}
+
+body>section>form>p>input:hover{
+	border-bottom: 4px solid black;
+}
+
+body>section>form>p>input:focus{
+	border-bottom: 4px solid #7986CB;
+}
+
+body>section>form>input[type=submit]{
+	border: 1px solid black;
+	padding: 4px;
+	border-radius: 5px;
+	background-color: #7986CB;
+	color:black;
+	font-size:1em !important;
+	font-weight: 600;
+}
+
+body>section>form>input[type=submit]:hover{
+	border: 1px solid black;
+	padding: 4px;
+	border-radius: 5px;
+	background-color: #7986CB;
+	color:white;
+	font-size:1em !important;
+	font-weight: 600;
+}
+
+body>section>form>p>a{
+	text-decoration: underline;
+}
+
+body>section>h3{
+	margin-left:-10px;
+	font-family: 'Lobster', cursive;
+	font-size: 1.7em;
+	text-decoration: underline;
+}
+*{
+    box-sizing: border-box;
+}
+
+
+
+@media only screen and (min-width: 480px) and (max-width: 710px){
+
+}
+
+@media only screen and (min-width: 710px) and (max-width: 1050px){
+
+}
+
+@media only screen and (min-width: 1050px){
+	
+}

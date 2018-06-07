@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+	<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<title>Registro - ShareYou</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" type="text/css" href="general.css">
+		<link rel="stylesheet" type="text/css" href="login.css">
+		<link rel="stylesheet" type="text/css" href="fontello-54deeba2/css/animation.css">
+		<link rel="stylesheet" type="text/css" href="fontello-54deeba2/css/fontello.css">
+		<link rel="stylesheet" type="text/css" href="fontello-54deeba2/css/fontello-codecs.css">
+		<link rel="stylesheet" type="text/css" href="fontello-54deeba2/css/fontello-embedded.css">
+		<script src="function.js"></script>
+	</head>
+	<body onload="cargaIndex(); clearLogin();">
+		<input type="checkbox" class="checkbox" id="check"/>
+		<label for="check" class="check"></label>
+		<nav class="nav">
+			<h2 class="nav_item">ShareYou!</h2>
+			<a href="index.html" class="nav_item current"><span class="icon-home"></span>Inicio</a>
+			<a href="buscar.html" class="nav_item"><span class="icon-search"></span>Buscar</a>
+			<a href="login.html" class="nav_item"><span class="icon-login"></span>Login</a>
+			<a href="registro.html" class="nav_item"><span class="icon-user-add"></span>Registro</a>
+			<a href="index.html" class="nav_item" onclick="salir();"><span class="icon-logout"></span>Logout</a>
+			<a href="nueva-entrada.html" class="nav_item"><span class="icon-edit"></span>Nueva Entrada</a>
+		</nav> 
+		<header > 
+		<div id="image">
+			<img class="featured-img" src="mobile-first-index.png" alt="" />
+		</div>
+		<h1>ShareYou!</h1>
+		<h2 id="txt_exp">Publica las experiencias que quieras compartir</h2>
+		</header>
+
+		<section>
+		<h3>Registro</h3>
+			<form onsubmit="registrarse(this, event);" action="index.html" method="post">
+				<p>
+					<span>El nombre de usuario no esta disponible. Elija otro.</span>
+					<input type="text" onchange="disponible(this);" autofocus autocomplete="on" name="login" placeholder="Nombre de Usuario" pattern="^[a-zA-Z][a-zA-Z0-9]{3,20}$" required>
+				</p>
+				<p>
+					<input type="text" autocomplete="on" name="name" placeholder="Nombre y Apellidos"  required>
+				</p>
+				<p>
+					<input type="password" name="pass" autocomplete="on" placeholder="Contraseña" pattern="^[a-zA-Z0-9_-]{6,20}$" required>
+				</p>
+				<p>
+					<span>¡Las contraseñas no coinciden!</span>
+					<input type="password" onchange="comprobarPWD(this);" name="pass2" autocomplete="on" placeholder="Repetir Contraseña" pattern="^[a-zA-Z0-9_-]{6,20}$" required>
+				</p>
+				<p>
+					<input type="email" name="email" autocomplete="on" placeholder="Email" required>
+				</p>
+				<input type="submit" value="Registrarse" >
+				<p>Si ya tienes cuenta, <a href="login.html" > Inicia Sesión <span class="icon-login"></span></a></p>
+			</form>
+		</section>
+			
+		<footer>
+			<a href="acerca.html">Contacto</a>
+			<p> ShareYou <time datetime="2017">2017</time>&#169;</p>
+		</footer>
+	</body>
+</html>

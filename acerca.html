@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+	<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<title>Inicio - ShareYou</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" type="text/css" href="general.css">
+		<link rel="stylesheet" type="text/css" href="acerca.css">
+		<link rel="stylesheet" type="text/css" href="fontello-54deeba2/css/animation.css">
+		<link rel="stylesheet" type="text/css" href="fontello-54deeba2/css/fontello.css">
+		<link rel="stylesheet" type="text/css" href="fontello-54deeba2/css/fontello-codecs.css">
+		<link rel="stylesheet" type="text/css" href="fontello-54deeba2/css/fontello-embedded.css">
+		<script src="function.js"></script>
+	</head>
+	<body onload = "clearLogin();">
+		<input type="checkbox" class="checkbox" id="check"/>
+		<label for="check" class="check"></label>
+		
+		<header > 
+		<div id="image">
+			<img class="featured-img" src="mobile-first-index.png" alt="" />
+		</div>
+		<h1>ShareYou!</h1>
+		<h2 id="txt_exp">Publica las experiencias que quieras compartir</h2>
+		</header>
+		<nav class="nav">
+			<h2 class="nav_item">ShareYou!</h2>
+			<a href="index.html" class="nav_item"><span class="icon-home"></span>Inicio</a>
+			<a href="buscar.html" class="nav_item"><span class="icon-search"></span>Buscar</a>
+			<a href="login.html" class="nav_item"><span class="icon-login"></span>Login</a>
+			<a href="registro.html" class="nav_item"><span class="icon-user-add"></span>Registro</a>
+			<a href="index.html" class="nav_item" onclick="salir();"><span class="icon-logout"></span>Logout</a>
+			<a href="nueva-entrada.html" class="nav_item"><span class="icon-edit"></span>Nueva Entrada</a>
+		</nav> 
+		<section>
+			<div>
+				<h3>Creadores</h3>
+				<p><b>Salvador Mateo Tomás</b>   DNI: 74385465S   Grupo: Jueves 9-11:00  smt28@alu.ua.es</p>
+				<p><b>Pablo López Iborra</b>   DNI: 54204852Q   Grupo: Jueves 9-11:00  pli1@alu.ua.es</p>
+				<p>Practica 1: Programación Hipermedia 2</p>
+				<h3>Implementaciones</h3>
+				<p>Se ha conseguido implementar todo lo pedido en la practica</p>
+				<h3>Problemas e Incompatibilidades encontradas</h3>
+				<p>Modo Móvil</p>
+				<p>El menú lo hemos creado de forma lateral, ocultándolo en el lado izquierdo de la pantalla.</p>
+
+				<p>Algunas veces, no sabemos porque, no realiza la transición de cerrado del menú lateral de forma correcta</p>
+
+				<p>Mozilla Firefox:</p>
+					<p>En los tipo input date del formulario de "Buscar" no aparece la posibilidad del pulsar calendario para añadir fecha</p>
+
+				<p>Google Chorme:</p>
+					<p>Algunas veces nos añade espacio en uno de los laterales, de forma que tenemos un pequeño scroll lateal. Creemos que la culpa de esto es del propio Chorme.</p>
+
+					<p>Chrome no interpreta de la misma manera la resolución en px, por lo que los @media de 480px los coge a partir de 530px y así sucesivamente con todos. Con Firefox y demas navegadores no pasa.</p>
+			</div>
+			
+		</section>
+
+		<footer>
+			<a href="acerca.html">Contacto</a>
+			<p> ShareYou <time datetime="2017">2017</time>&#169;</p>
+		</footer>
+	</body>
+</html>
